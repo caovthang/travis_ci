@@ -19,5 +19,5 @@ script:
   - docker tag simple-node thangcv/simple-node:latest
 
 after_success:
-  - echo "$DOCKER_PASSWORD" | docker login --username thangcv --password-Thanhha1@123456
+  - echo "$DOCKER_PASSWORD" | docker login -u="thangcv" -p="Thanhha1@123456"
   - docker push thangcv/simple-node:lastest
